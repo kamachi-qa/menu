@@ -16,21 +16,29 @@
         flex-direction: column;
         min-height: 100vh;
       }
-      .button a{
+      .button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+      }
+      .button a {
         background-color: #e5c7b1;
         color: #2b2b2b;
+        text-decoration: none;
+        border: none;
+        margin: 0 auto;
         border-radius: 0.5rem;
-        padding: 1rem 2rem;
-        font-size: 1.2rem;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin-top: 1rem;
         box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
         cursor: pointer;
         transition: all 0.3s ease;
-        width: 300px; /* or any other desired width */
-        padding: 0.8rem 1.6rem;
+        width: 500px;
+        padding: 2rem 4rem;
+        margin-bottom: 2rem;
         font-size: 1.5rem;
-        text-decoration: none;
+        width: 50%;
+        max-width: 400px;
       }
       .button a:hover {
         background-color: #f7d4b4;
@@ -56,6 +64,10 @@
         header img {
           max-width: 300px;
         }
+      @media only screen and (max-width: 768px) {
+        .button a{
+          padding: 1.5rem 3rem;
+          font-size
       }
       /* Add any custom styling here */
     </style>
@@ -65,10 +77,6 @@
       <img src="kamachi logo.png" alt="My Restaurant Logo">
       <div class="button">
         <a href="englishm.html">English Menu</a>
-      </div>
-        <br>
-        <br>
-      <div class="button">
         <a href="Arabm.html">Arabic Menu</a>
       </div>
     </header>
